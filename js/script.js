@@ -1,7 +1,7 @@
 // Mixing jQuery and Node.js code in the same file? Yes please!
 
 $(function(){
-
+   
     // Display some statistics about this computer, using node's os module.
 
     var os = require('os');

@@ -124,7 +124,7 @@ function createWindow(){
   //     }
   //   }]
   // });
-  Menu.setApplicationMenu(Menu.buildFromTemplate(template ));
+  Menu.setApplicationMenu(Menu.buildFromTemplate(template));
 }
 function allClosed(){
   if(process.platform !== 'darwin'){

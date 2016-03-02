@@ -1,42 +1,30 @@
 <!DOCTYPE html>
 <html>
-<head>
+	<head>
 
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
+	    <meta charset="utf-8">
+	    <meta name="viewport" content="width=device-width, initial-scale=1">
 
-    <title>Tutorialzine Electron Experiment</title>
+	    <title>Tutorialzine Electron Experiment</title>
 
-    <link rel="stylesheet" href="./css/jquery.flipster.min.css">
-    <link rel="stylesheet" href="./css/styles.css">
+	    <link rel="stylesheet" href="./css/jquery.flipster.min.css">
+	    <link rel="stylesheet" href="./css/styles.css">
 
-</head>
-<body>
+	</head>
+	<body>
 
-<div class="flipster">
-    <ul>
-    </ul>
-</div>
+		<div class="flipster">
+		    <ul>
+		    </ul>
+		</div>
 
-<p class="stats"></p>
+		<p class="stats"></p>
 
-<script>window.$ = window.jQuery = require('./js/jquery.min.js');</script>
-<script src="./js/jquery.flipster.min.js"></script>
-<script src="./js/script.js"></script>
-<script>
-	const remote = require('electron').remote;
-	const Menu = remote.Menu;
-	const MenuItem = remote.MenuItem;
 
-	var menu = new Menu();
-	menu.append(new MenuItem({ label: 'MenuItem1', click: function() { console.log('item 1 clicked'); } }));
-	menu.append(new MenuItem({ type: 'separator' }));
-	menu.append(new MenuItem({ label: 'MenuItem2', type: 'checkbox', checked: true }));
-
-	window.addEventListener('contextmenu', function (e) {
-	  e.preventDefault();
-	  menu.popup(remote.getCurrentWindow());
-	}, false);
-</script>
-</body>
+		<script>window.$ = window.jQuery = require('./js/jquery.min.js');</script>
+		<script src="./js/jquery.flipster.min.js"></script>
+		<script src="./js/script.js"></script>
+		<script src="./js/menu.js"></script>
+		<script src="./js/sql.js"></script>
+	</body>
 </html>
