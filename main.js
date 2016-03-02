@@ -127,7 +127,7 @@ function createWindow(){
   Menu.setApplicationMenu(Menu.buildFromTemplate(template ));
 }
 function allClosed(){
-  if(prcoess.platform !== 'darwin'){
+  if(process.platform !== 'darwin'){
     app.quit();
   }
 }
